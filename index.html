@@ -2,11 +2,44 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Module 5 Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="script.js"></script>
+    <title>Henry Module 5 Project</title>
   </head>
   <body>
-    
-	
+      <h1>Script Programming</h1>
+      <h3 class="text-muted">Jeopardy Game</h3><br><br>
+      <! –– not really sure how to do bootstrap rows/columns, so i just did a bootstrap table. sorry! ––>
+  <table class="table table-bordered">
+      <thead>
+      <tr>
+        <th>Math</th>
+        <th>English</th>
+        <th>Science</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><button onclick="questionOne()" class="btn btn-light">$100</button></td>
+        <td><button onclick="questionTwo()" class="btn btn-light">$100</button></td>
+        <td><button onclick="questionThree()" class="btn btn-light">$100</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="questionFour()" class="btn btn-info">$200</button></td>
+        <td><button onclick="questionFive()" class="btn btn-info">$200</button></td>
+        <td><button onclick="questionSix()" class="btn btn-info">$200</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="questionSeven()" class="btn btn-primary">$300</button></td>
+        <td><button onclick="questionEight()" class="btn btn-primary">$300</button></td>
+        <td><button onclick="questionNine()" class="btn btn-primary">$300</button></td>
+      </tr>
+    </tbody>
+  </table><br><br>
+      <h3>Score:</h3>
+      <h3 id="score"></h3>
   </body>
 </html>
